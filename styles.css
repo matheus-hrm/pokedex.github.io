@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(74, 206, 195), #fff);
+    min-height: 100vh;
+}
+
+.pokedex{
+    width: 100%;
+    max-width: 425px;
+}
+
+.imagemPokemon{
+    image-rendering: pixelated;
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+}
+
+.pokemonData{
+    position: absolute;
+    font-weight: 600;
+    color: rgb(92, 92, 92);
+    top: 55%;
+    right: 27%;
+    font-size: clamp(8px,5vw,25px);
+}
+
+.nomePokemon{
+    color: rgb(88, 88, 88);
+    text-transform: capitalize;
+}
+
+.numeroPokemon{
+    color: rgb(58, 68, 68);
+}
+
+.buscaPokemon{
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 14%;
+}
+
+.inputSearch{
+    width: 100%;
+    padding: 3.5%;
+    outline: none;
+    border: 2px solid rgb(92, 92, 92);
+    border-radius: 8px;
+    font-weight: 600;
+    color: rgb(92, 92, 92);
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 3.5px 0 #888, -4.5px 5px 0 black;
+}
+
+.botao{
+    position:absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    background-color: red;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 22px;
+}
+
+.botoes{
+    width: 50%;
+    padding: 4%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: rgb(48, 48, 48);
+    box-shadow: -2px 3px 0 rgb(41, 41, 41), -4px 6px 0 black;
+}
+
+.botoes:active{
+    background-color: rgb(32, 32, 32);
+    box-shadow: inset -4px 4px 0 black;
+    font-size: 0.9rem;
+}
+
+.botaovermelho{
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    left: 12%;
+    top: -164%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(56, 8, 8);
+    box-shadow: -1.25px 0.5px 0px rgb(117, 11, 11), -2.5px 1.5px 0 black;
+    outline: none;
+}
+
+.botaovermelho:active{
+    background-color: rgb(129, 0, 0);
+    top: -160%;
+    border: 1px solid black;
+    box-shadow: inset -2px 1px 0px black;
+}
+button{
+    display: block;
+    cursor: pointer;
+}
